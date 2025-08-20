@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --main-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.logo h1 {
+    font-family: norse, var(--main-font);
+    color: aliceblue;
+}
+
+.formSection {
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    padding: 2rem;
+    height: 100vh;
+}
+
+.inputs {
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+    padding-bottom: 0.7rem;
+    border-radius: 8px;
+}
+
+.formHero {
+    background-color: rgb(243, 242, 242);
+    font-size: 1rem;
+    font-family: sans-serif, var(--main-font);
+    line-height: 1.6rem;
+}
+
+.inputRow {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.inputGroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    font-family: var(--main-font);
+    font-weight: 600;
+    color: #555;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.input-group input {
+    padding: 0.7em 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fafafa;
+    transition: border-color 0.2s;
+}
+
+input {
+    width: 250px;
+    height: 20px;
+}
+
+.formFooter {
+    background-color: rgb(250, 250, 250);
+}
+
+.inputGroup input:focus {
+    border-color: blue;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.inputGroup input[type="password"]:invalid {
+    border-color: red;
+    outline: none;
+}
+
+.formFooter button {
+    font-family: sans-serif, var(--main-font);
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: #596D48;
+    padding: 0.6rem 1.8rem;
+    border-radius: 6px;
+    border: none; 
+    box-shadow: none; 
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
